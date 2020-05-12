@@ -32,8 +32,10 @@ namespace antsequence20th
                     if (ant[j] == ant[j + 1]) count++;
                     else
                     {
-                        bnt[index++] = ant[j];
-                        bnt[index++] = count;
+                        bnt[index] = ant[j];
+                        bnt[index+1] = count;
+                        count = 1;
+                        index += 2;
                     }
 
                     j++;
